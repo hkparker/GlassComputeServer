@@ -10,6 +10,7 @@ You'll need the following libs to compile:
 
 Server will run on port 8080. If you want to use GlassCompute with your own server, you'll have to update the URL in the GlassCompute ComputeActivity.java
 
+You'll also need to update the WolframAlphaResults.java appid variable with your own WolframAlpha Developer key.
 
 **To help enhance parsing**, take a look at the ResponseServer.java's public String parseQuery(String query) {} method. Basic string parsing must be conducted here and the result will be sent to WAs servers.
 
