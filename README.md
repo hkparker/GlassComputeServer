@@ -13,4 +13,4 @@ Server will run on port 8080. If you want to use GlassCompute with your own serv
 
 **To help enhance parsing**, take a look at the ResponseServer.java's public String parseQuery(String query) {} method. Basic string parsing must be conducted here and the result will be sent to WAs servers.
 
-
+**Project page:** http://aaka.sh/patel/projects/wolframalpha-for-google-glass/
