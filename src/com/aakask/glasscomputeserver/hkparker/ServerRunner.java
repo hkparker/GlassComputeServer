@@ -1,4 +1,6 @@
+package com.aakask.glasscomputeserver.hkparker;
 import java.io.IOException;
+import java.util.concurrent.LinkedBlockingQueue;
 
 public class ServerRunner {
     public static void run(Class serverClass) {
@@ -17,14 +19,12 @@ public class ServerRunner {
             System.exit(-1);
         }
 
-        System.out.println("Server started, Hit Enter to stop.\n");
+        System.out.println("Server started...\n");
 
         try {
-            System.in.read();
-        } catch (Throwable ignored) {
-        }
-
-        server.stop();
-        System.out.println("Server stopped.\n");
+			(new LinkedBlockingQueue()).take();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
     }
 }
